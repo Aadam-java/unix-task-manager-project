@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+
+fetch('tasks_data.php')
+.then(response => response.json())
+.then(data => {
+
+const tableBody = document.getElementById('tableBody');
+
+data.forEach(task => {
+
+tableBody.innerHTML += `
+<tr>
+<td>${task.task_name}</td>
+</tr>
+`;
+
+});
+
+});
+
+</script>
+<body>
+
+<h1>Task Manager</h1>
+
+<a href="addtask.html">Add New Task</a>
+
+<br><br>
+
+<table border="1">
+
+<tr>
+<th>Task Name</th>
+</tr>
+
+<tbody id="tableBody">
+</tbody>
+
+</table>
+
+</body>
+
+</html>

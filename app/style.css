@@ -1,0 +1,30 @@
+body {
+    font-family: Arial;
+    margin: 40px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+table {
+    background-color: white;
+    border-collapse: collapse;
+    width: 400px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
